@@ -3,7 +3,7 @@ Digital Creative Genesis Gulp
 
 <img alt="Digital Creative Genesis" src="screenshot.png" style="float: right; margin-left: 10px;">
 
-Digital Creative Genesis is a Genesis child theme used for Laverty Creative client projects, using Gulp as a build tool.
+Digital Creative Genesis is a Genesis child theme using Gulp as a build tool.
 <br>
 
 
