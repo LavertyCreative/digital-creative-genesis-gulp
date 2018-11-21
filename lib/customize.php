@@ -118,7 +118,7 @@ function dcg_customizer_register( $wp_customize ) {
 	$wp_customize->add_setting(
 		'dcg_navigation_transparency',
 		array(
-			'default'           => 'true',
+			'default'           => 'false',
 			'sanitize_callback' => 'dcg_sanitize_input',
 			'transport'         => 'refresh',
 		)
@@ -128,6 +128,23 @@ function dcg_customizer_register( $wp_customize ) {
 		array(
 			'section' => 'dcg_display_options',
 			'label'   => 'Transparent Navigation?',
+			'type'    => 'checkbox',
+		)
+	);
+
+	$wp_customize->add_setting(
+		'dcg_navigation_fixed',
+		array(
+			'default'           => 'false',
+			'sanitize_callback' => 'dcg_sanitize_input',
+			'transport'         => 'refresh',
+		)
+	);
+	$wp_customize->add_control(
+		'dcg_navigation_fixed',
+		array(
+			'section' => 'dcg_display_options',
+			'label'   => 'Fixed Navigation?',
 			'type'    => 'checkbox',
 		)
 	);
