@@ -62,8 +62,8 @@ gulp.task('connect-sync', function () {
 });
 
 gulp.task('watch', function() {
-    gulp.watch('assets/styles/src/**/*.scss', ['sass']);
-    gulp.watch('assets/scripts/src/**/*.js', ['scripts']);
+    gulp.watch('assets/styles/src/**/*.scss', ['sass']).on('change', browserSync.reload);
+    gulp.watch('assets/scripts/src/**/*.js', ['scripts']).on('change', browserSync.reload);
     gulp.watch('assets/images/src/*', ['images']);
 });
 
