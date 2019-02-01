@@ -19,6 +19,9 @@ add_theme_support( 'genesis-accessibility', array( '404-page', 'drop-down-menu',
 // Add Post Format support for aside, gallery, link, and video.
 add_theme_support( 'post-formats', array( 'aside', 'gallery', 'link', 'video' ) );
 
+// Add starter content.
+add_theme_support( 'starter-content' );
+
 // Add viewport meta tag for mobile browsers.
 add_theme_support( 'genesis-responsive-viewport' );
 

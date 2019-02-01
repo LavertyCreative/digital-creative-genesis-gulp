@@ -6,6 +6,7 @@ $breakpoints: (
   "phone-wide":   480px,
   "phablet":      560px,
   "tablet-small": 640px,
+  "standard":     768px,
   "tablet":       861px,
   "tablet-wide":  1024px,
   "desktop":      1201px,
@@ -160,10 +161,6 @@ div {
 // Transform
 // generic transform
 @mixin transform($transforms) {
-	-moz-transform: $transforms;
-	-o-transform: $transforms;
-	-ms-transform: $transforms;
-	-webkit-transform: $transforms;
   transform: $transforms;
 }
 // rotate
@@ -184,10 +181,6 @@ div {
 }
 //transform origin
 @mixin transform-origin ($origin) {
-  moz-transform-origin: $origin;
-  -o-transform-origin: $origin;
-  -ms-transform-origin: $origin;
-  -webkit-transform-origin: $origin;
   transform-origin: $origin;
 }
 // USAGE
@@ -200,38 +193,18 @@ div {
 
 // Transition
 @mixin transition($transition...) {
-  -moz-transition:    $transition;
-  -o-transition:      $transition;
-  -ms-transition:     $transition;
-  -webkit-transition: $transition;
   transition:         $transition;
 }
 @mixin transition-property($property...) {
-  -moz-transition-property:    $property;
-  -o-transition-property:      $property;
-  -ms-transition:              $property;
-  -webkit-transition-property: $property;
   transition-property:         $property;
 }
 @mixin transition-duration($duration...) {
-  -moz-transition-property:    $duration;
-  -o-transition-property:      $duration;
-  -ms-transition:              $duration;
-  -webkit-transition-property: $duration;
   transition-property:         $duration;
 }
 @mixin transition-timing-function($timing...) {
-  -moz-transition-timing-function:    $timing;
-  -o-transition-timing-function:      $timing;
-  -ms-transition:                     $timing;
-  -webkit-transition-timing-function: $timing;
   transition-timing-function:         $timing;
 }
 @mixin transition-delay($delay...) {
-  -moz-transition-delay:    $delay;
-  -o-transition-delay:      $delay;
-  -ms-transition:           $delay;
-  -webkit-transition-delay: $delay;
   transition-delay:         $delay;
 }
 // USAGE
@@ -243,9 +216,6 @@ a {
 
 // Linear Gradient
 @mixin linear-gradient($args...) {
-  background-image: -o-linear-gradient($args);
-  background-image: -moz-linear-gradient($args);
-  background-image: -webkit-linear-gradient($args);
   background-image: linear-gradient($args);
 }
 // USAGE
